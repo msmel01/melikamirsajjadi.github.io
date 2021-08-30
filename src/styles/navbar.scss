@@ -1,0 +1,113 @@
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+    width: 100%;
+    position: fixed;
+    transition: 0.5s ease all;
+    color: white;
+    height: 50px;
+    nav {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        padding: 10px 0px;
+        transition: 0.5s ease all;
+        width: 90%;
+        height: 50px;
+        margin: 0 auto;
+        @media (min-width: 1140px) {
+            max-width: 1140px;
+        }
+    }
+
+    ul, li {
+        list-style-type: none;
+    }
+
+    li {
+        padding: 16px;
+        margin-left: 16px;
+    }
+
+    .navbar-item {
+        color: white;
+        text-decoration: none;
+        transition: 0.5s ease all;
+        padding: 4px;
+
+        &:hover{
+            color: turquoise;
+        }
+    }
+
+    .fa-icon {
+        font-size: 1.5rem;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-list {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    .toggle-icon {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 24px;
+        height: 100%;
+        cursor: pointer;
+        transition: 0.8s ease all;
+    }
+
+    .icon-active {
+        transform: rotate(180deg);
+    }
+
+    .dropdown-nav {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        max-width: 250px;
+        height: 100%;
+        background-color: white;
+        top: 0;
+        left: 0;
+
+        li {
+            margin-left: 0;
+
+            .navbar-item {
+                color: black;
+
+            }
+        }
+    }
+
+    .mobile-nav-enter-active, .mobile-nav-leave-active {
+        transition: 1s ease all;
+    }
+
+    .mobile-nav-enter-from, .mobile-nav-leave-to {
+        transform: translateX(-250px);
+    }
+
+    .mobile-nav-enter-to {
+        transform: translateX(0px);
+    }
+}
+
+.scrolled-nav {
+    background-color: black;
+
+    nav {
+        padding: 8px 0;
+    }
+}
