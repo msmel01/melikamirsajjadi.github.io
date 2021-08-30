@@ -1,19 +1,23 @@
 <template>
     <header :class="{ 'scrolled-nav' : scrollNav }">
         <nav>
-            <div class="logo">meli.</div>
+            <div class="logo">
+                <p class="logo-text">Melika</p>
+                <span></span>
+                <span></span>
+            </div>
 
             <ul v-show="!mobile" class="nav-list">
                 <li>
-                    <a href="#" class="navbar-item">education</a>
+                    <a href="#" class="navbar-item">Education</a>
                 </li>
 
                 <li>
-                    <a href="#" class="navbar-item">experience</a>
+                    <a href="#" class="navbar-item">Experience</a>
                 </li>
 
                 <li>
-                    <a href="#" class="navbar-item">projects</a>
+                    <a href="#" class="navbar-item">Projects</a>
                 </li>
 
                 <li>
@@ -30,21 +34,21 @@
             </ul>
 
             <div class="toggle-icon"  @click="toggleMobileNav" v-show="mobile" :class="{ 'icon-active' : mobileNav }">
-                <font-awesome-icon :icon="['fas', 'bars']" />
+                <font-awesome-icon :icon="['fas', 'bars']" class="fa-lg" />
             </div>
 
             <transition name="mobile-nav">
                 <ul v-show="mobileNav" class="dropdown-nav">
                     <li>
-                        <a href="#" class="navbar-item">education</a>
+                        <a href="#" class="navbar-item">Education</a>
                     </li>
 
                     <li>
-                        <a href="#" class="navbar-item">experience</a>
+                        <a href="#" class="navbar-item">Experience</a>
                     </li>
 
                     <li>
-                        <a href="#" class="navbar-item">projects</a>
+                        <a href="#" class="navbar-item">Projects</a>
                     </li>
 
                     <li>
