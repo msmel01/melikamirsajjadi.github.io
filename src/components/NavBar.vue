@@ -1,11 +1,11 @@
 <template>
     <header :class="{ 'scrolled-nav' : scrollNav }">
         <nav>
-            <div class="logo">
+            <!-- <div class="logo">
                 <p class="logo-text">Melika</p>
                 <span></span>
                 <span></span>
-            </div>
+            </div> -->
 
             <ul v-show="!mobile" class="nav-list">
                 <li>
