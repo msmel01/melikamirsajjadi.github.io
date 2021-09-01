@@ -1,5 +1,6 @@
 <template>
-    <header :class="{ 'scrolled-nav' : scrollNav }">
+<!-- :class="{ 'scrolled-nav' : scrollNav }" -->
+    <header>
         <nav>
             <!-- <div class="logo">
                 <p class="logo-text">Melika</p>
