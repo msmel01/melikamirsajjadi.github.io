@@ -1,7 +1,7 @@
 <template>
     <section class="hero">
         <div class="container">
-            <h2 class="title">Hi, I'm
+            <h2 class="title" id="hero-scene">Hi, I'm
                 <span>M</span>
                 <span>e</span>
                 <span>l</span>
@@ -16,6 +16,7 @@
 
 <script>
     import '@/styles/hero.scss';
+
     export default {
         name: 'Hero',
         data() {

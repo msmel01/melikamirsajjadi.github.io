@@ -5,13 +5,13 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    z-index: 10;
+    z-index: 1000;
 
     .container {
         display: flex;
         align-items: center;
         flex-direction: column;
-        z-index: 10;
+        z-index: 18;
 
         .title {
             padding-left: 90px;
@@ -21,17 +21,17 @@
             text-align: left;
             color: #FFFFF0;
             font-family: 'Montserrat', sans-serif;
-            z-index: 10;
+            z-index: 18;
 
-            @media (max-width: 700px) {
+            @media (max-width: 768px) {
                 padding: 0px 30px;
             }
 
             span {
                 font-size: 10vw;
                 font-family: 'Montserrat', sans-serif;
-                z-index: 10;
-
+                z-index: 18;
+                
                 text-shadow: 1px 1px 0 #ffcd09,
                              2px 2px 0 #ffcd09,
                              3px 3px 0 #ffcd09,
@@ -39,10 +39,10 @@
                              5px 5px 0 #ffcd09,
                              6px 6px 0 #ffcd09;
                              
-                @media (max-width: 700px) {
+                @media (max-width: 768px) {
                     text-shadow: 1px 1px 0 #ffcd09,
                                  2px 2px 0 #ffcd09,
-                                 3px 3px 0 #ffcd09,
+                                 3px 3px 0 #ffcd09;
                 }
             }
 
@@ -55,7 +55,7 @@
             color: #FFFFF0;
             z-index: 10;
             
-            @media (max-width: 700px) {
+            @media (max-width: 768px) {
                 padding: 0px 30px;
             }
         }
